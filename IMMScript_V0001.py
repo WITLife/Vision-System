@@ -4,8 +4,8 @@ import time
 
 start = time.time()
 
-image1 = cv2.imread("boat.jpg")
-image2 = cv2.imread("boat1.jpg")
+image1 = cv2.imread("mike.jpg")
+image2 = cv2.imread("mike1.jpg")
 
 difference = cv2.subtract(image1, image2)
 

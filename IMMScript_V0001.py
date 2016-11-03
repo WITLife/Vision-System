@@ -1,5 +1,8 @@
 import numpy as np
 import cv2
+import time
+
+start = time.time()
 
 image1 = cv2.imread("boat.jpg")
 image2 = cv2.imread("boat1.jpg")
@@ -13,3 +16,6 @@ if result is True:
 else:
   img = cv2.imwrite("result.jpg", difference)
   print "The images are different"
+
+end = time.time()
+print end-start
